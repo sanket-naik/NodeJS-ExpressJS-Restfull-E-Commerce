@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+  <% include ../partials/nav.ejs %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo">
+      <img src="/lang-logo.png">
+    </a>
+    <h1>Restfull Avilable API Endpoints</h1> </div>
+</div>
+<div class="container">
+  <div class="alert alert-info text-center" role="alert">
+    This backend is created using nodejs and mongodb and deployed in heroku server!. Use <b>Postman</b> for post/patch. No auth header, its public.
+  </div>
+  <hr>
+  <div class="row" style="margin-bottom: 40px">
+    <div >
+      <h3><span class="glyphicon glyphicon-link"></span>API Endpoints</h3>
+      <ul>
+        <li><code>Operation GET : <a href="https://e-commerce-endpoints.herokuapp.com/api/products">/api/products</a></code> - List of avilable products</li>
+        <li><code>Operation GET : <a href="https://e-commerce-endpoints.herokuapp.com/api/products/id-here">/api/products/id-here</a></code> - Products by id</li>
+        <li><code>Operation POST :<a href="https://e-commerce-endpoints.herokuapp.com/api/products/add">/api/products/add</a></code> - Add new item to the list</li>
+        <li><code>Operation PATCH :<a href="https://e-commerce-endpoints.herokuapp.com/api/products/update/id-here">/api/products/update/id-here</a></code> - You can only update inCart to boolean</li>
+      </ul>
+    </div>
+    <h3><span class="glyphicon glyphicon-link"> </span>Product Sample JSON</h3>
+     <code>{<br>&nbsp;&nbsp;&nbsp;"inCart": false,<br>
+      &nbsp;&nbsp;&nbsp;"_id": "5d446915d70e8c1e0484e4b7",<br>
+      &nbsp;&nbsp;&nbsp;"title": "Google Pixel",<br>
+      &nbsp;&nbsp;&nbsp;"img": "./img/product-1.png",<br>
+      &nbsp;&nbsp;&nbsp;"price": 25000,<br>
+      &nbsp;&nbsp;&nbsp;"company": "GOOGLE",<br>
+      &nbsp;&nbsp;&nbsp;"info": "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub ",<br>
+      &nbsp;&nbsp;&nbsp;"count": 1,<br>
+      &nbsp;&nbsp;&nbsp;"total": 25000,
+      <br>}</code>
+  </div>
+</div>
+
+
+</body>
+</html>
